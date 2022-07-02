@@ -1,0 +1,31 @@
+.txt-danger {
+  color: red;
+}
+
+.txt-success {
+  color: $COLOR-GREEN;
+}
+
+.txt-secondary {
+  color: #b2bec3;
+}
+
+.color-update {
+  color: $COLOR-UPDATE
+}
+
+.color-delete {
+  color: $COLOR-DELETE
+}
+
+.color-pending {
+  color: $COLOR-GREY
+}
+
+.txt-white {
+  color: #f1f2f6;
+}
+
+.card-background {
+  background-color: $COLOR-CARD;
+}

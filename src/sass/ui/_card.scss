@@ -1,0 +1,80 @@
+.card {
+  // border: 1px solid black;
+  border-radius: 10px;
+  display: flex; 
+  padding: 1rem 0.5rem;
+  width: 100%;
+  background-color: #f1f2f6;
+  margin-bottom: 1.5rem;
+  
+  &__img {
+    @include flex-center;
+    padding: 0 .5rem;
+    // border: 1px solid black;
+    &__checkbox {
+      //   visibility: hidden;
+    }
+  }
+
+  &__info {
+    padding: 0 1rem;
+    width: 100%;
+    // border: 1px solid black;
+    &__name {
+        font-weight: 600;
+        overflow: hidden;
+        // border: 1px  solid black;
+        margin-bottom: .5rem;
+    }
+    &__state {
+        font-size: 1.3rem;
+        color: $COLOR-GREY;
+        display: flex; 
+        
+        &__status {
+
+        }
+        &__time {
+
+        }
+    }
+  }
+
+  &__action {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    position: relative;
+
+    &__btn {
+      position: relative;
+      width: 4rem;
+      height: 5rem;
+      @include flex-center;
+      background-color: transparent; 
+      border: none;
+      cursor: pointer;
+
+      &__icon {
+        font-size: 2.5rem;
+      }
+    }
+
+    &__btn:hover {
+      filter: brightness(150%);
+    }
+
+
+  }
+}
+
+.card:last-child {
+  margin-bottom: 0rem;
+}
+
+.select {
+  background-color: #00a8ff;
+  color: white;
+}
+

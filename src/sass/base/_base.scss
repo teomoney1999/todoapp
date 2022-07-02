@@ -1,0 +1,24 @@
+*, 
+*::after, 
+*::before {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.App {
+    font-size: 1.6rem;
+}
