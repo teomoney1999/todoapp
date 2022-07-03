@@ -10,6 +10,7 @@ const InputForm = ({ className }) => {
     if (event.key === "Enter") {
       console.log("Enter");
       // setInput(event.target.value);
+      setInput("");
       return;
     }
     if (event.key === "Escape") {

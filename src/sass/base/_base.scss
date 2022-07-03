@@ -9,10 +9,16 @@
 html {
     font-size: 62.5%; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
 }
 
 body {
     box-sizing: border-box;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+
 }
 
 a {
