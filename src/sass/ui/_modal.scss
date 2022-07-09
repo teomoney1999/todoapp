@@ -1,0 +1,39 @@
+#overlays {
+    font-size: 1.6rem;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+    position: fixed; 
+    top: 20vh; 
+    left: 15%; 
+    width: 70%; 
+    background: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    z-index: 30; 
+    // background: rgba(0, 0, 0, 0.25);
+  
+    &__title {
+        font-size: 2.5rem; 
+        font-weight: 600;
+        margin-bottom: 1rem; 
+    }
+  
+    &__info {
+        
+    }
+  
+    &__actions {
+    }
+  }

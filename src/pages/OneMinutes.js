@@ -1,24 +1,26 @@
 import ProgressCircle from "../ui/CircleProgress/Progress";
-import Card from "../ui/Card";
+
 import Box from "../ui/Box";
-import Noti from "../ui/Noti";
+import Noti from "../components/Noti";
+import Modal from "../ui/Modal";
 import InputFrom from "../components/InputForm";
+import Task from "../components/Task";
+import Tasks from "../components/Tasks";
 
 const OneMinutes = ({ className }) => {
   return (
-    <Box className="one-minutes">
-      <h1>1'</h1>
-      <InputFrom />
-      <p>Your daily progress will be shown here</p>
-      
-      {/* Progress Circle */}
-      <ProgressCircle percentages={75}/>
-      <Card />
-      <Card />
+    <Box className="one">
+      <h1 className="one__title">1'</h1>
+
+      <InputFrom className="one__input" />
+
+      <p className="one__content">Your daily progress will be shown here</p>
+
+      <ProgressCircle className="one__pc" percentages={25} />
+
+      <Tasks />
 
       <Noti />
-
-      {/* Tasks */}
     </Box>
   );
 };

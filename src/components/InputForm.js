@@ -6,10 +6,8 @@ const InputForm = ({ className }) => {
   const [input, setInput] = useState("");
 
   const submitHandle = (event) => {
-    console.log("event", event);
     if (event.key === "Enter") {
       console.log("Enter");
-      // setInput(event.target.value);
       setInput("");
       return;
     }
@@ -25,6 +23,7 @@ const InputForm = ({ className }) => {
   return (
     <Input
       id="input-form"
+      className={className}
       ref={taskNameRef}
       placeholder={"Press Enter to add a goal"}
       onChange={onChange}

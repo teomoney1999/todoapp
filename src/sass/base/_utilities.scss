@@ -10,6 +10,18 @@
   color: #b2bec3;
 }
 
+.btn-danger {
+  background: red; 
+  color: #eee; 
+}
+
+.btn-success {
+  background: $COLOR-GREEN; 
+  color: #eee; 
+}
+
+
+
 .color-update {
   color: $COLOR-UPDATE
 }
@@ -20,6 +32,10 @@
 
 .color-pending {
   color: $COLOR-GREY
+}
+
+.color-success {
+  color: $COLOR-GREEN;
 }
 
 .txt-white {

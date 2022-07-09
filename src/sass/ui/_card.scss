@@ -2,7 +2,7 @@
   // border: 1px solid black;
   border-radius: 10px;
   display: flex; 
-  padding: 1rem 0.5rem;
+  padding: 1.5rem 1rem;
   width: 100%;
   background-color: #f1f2f6;
   margin-bottom: 1.5rem;
@@ -16,27 +16,27 @@
     }
   }
 
-  &__info {
+  &__content {
     padding: 0 1rem;
     width: 100%;
     // border: 1px solid black;
-    &__name {
+    &__title {
         font-weight: 600;
         overflow: hidden;
         // border: 1px  solid black;
         margin-bottom: .5rem;
     }
-    &__state {
+    &__info {
         font-size: 1.3rem;
         color: $COLOR-GREY;
         display: flex; 
         
-        &__status {
+        // &__status {
 
-        }
-        &__time {
+        // }
+        // &__time {
 
-        }
+        // }
     }
   }
 

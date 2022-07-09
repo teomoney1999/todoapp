@@ -1,9 +1,9 @@
-import {useState} from 'react'; 
+import { useState } from "react";
+import Card from "../ui/Card";
+import Checkbox from "../ui/Checkbox";
 
-const Task = ({className}) => {
-    return (
-    );
-}
-
+const Task = (props) => {
+  return <Card img={<Checkbox />} isAction={true} {...props} />;
+};
 
 export default Task;

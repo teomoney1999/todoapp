@@ -32,6 +32,14 @@ a {
 .txt-secondary {
   color: #b2bec3; }
 
+.btn-danger {
+  background: red;
+  color: #eee; }
+
+.btn-success {
+  background: #44bd32;
+  color: #eee; }
+
 .color-update {
   color: #e1b12c; }
 
@@ -41,11 +49,25 @@ a {
 .color-pending {
   color: #b2bec3; }
 
+.color-success {
+  color: #44bd32; }
+
 .txt-white {
   color: #f1f2f6; }
 
 .card-background {
   background-color: #f1f2f6; }
+
+.modal-input {
+  text-align: center; }
+  .modal-input__actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly; }
+    .modal-input__actions__btn {
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      border: none; }
 
 .noti {
   background-color: #7bed9f !important;
@@ -63,12 +85,12 @@ a {
       font-size: 1.6rem !important; }
 
 .box {
-  margin: 1rem 3rem; }
+  padding: 1rem 3rem; }
 
 .card {
   border-radius: 10px;
   display: flex;
-  padding: 1rem 0.5rem;
+  padding: 1.5rem 1rem;
   width: 100%;
   background-color: #f1f2f6;
   margin-bottom: 1.5rem; }
@@ -77,14 +99,14 @@ a {
     justify-content: center;
     align-items: center;
     padding: 0 .5rem; }
-  .card__info {
+  .card__content {
     padding: 0 1rem;
     width: 100%; }
-    .card__info__name {
+    .card__content__title {
       font-weight: 600;
       overflow: hidden;
       margin-bottom: .5rem; }
-    .card__info__state {
+    .card__content__info {
       font-size: 1.3rem;
       color: #b2bec3;
       display: flex; }
@@ -118,8 +140,35 @@ a {
 
 .list {
   width: 100%;
-  height: 40rem;
+  height: 30rem;
   overflow: scroll; }
+
+#overlays {
+  font-size: 1.6rem; }
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.75); }
+
+.modal {
+  position: fixed;
+  top: 20vh;
+  left: 15%;
+  width: 70%;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  z-index: 30; }
+  .modal__title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem; }
 
 .pc {
   width: 13rem;
@@ -158,7 +207,8 @@ a {
   width: 100%;
   border: 1px solid #eee;
   padding: 1rem 1.5rem;
-  border-radius: 90px; }
+  border-radius: 90px;
+  font-size: 1.6rem; }
   .input:focus {
     outline: none; }
   .input:hover {

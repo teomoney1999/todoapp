@@ -12,11 +12,11 @@ const config = {
   strokeWidth: "2.5rem",
 };
 
-const Progress = ({ percentages }) => {
+const Progress = ({ className, percentages }) => {
   const { width, height, cx, cy, r, color, strokeWidth } = config;
 
   return (
-    <div className="pc">
+    <div className={`pc ${className}`}>
       <div className="pc__outer">
         <div className="pc__inner">
           <div className="pc__number">{`${
